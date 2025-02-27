@@ -54,8 +54,8 @@ Prompt: "Two anthropomorphic cats in boxing gear fighting on a stage."
 Result: A 5-second 480P video showing animated cats sparring, rendered in ~4 minutes on an RTX 4090.
 
 ## Why Use This?
-  Wan2.1: Outperforms many closed-source models and runs on consumer hardware.
-  Spheron: Decentralized, scalable, and cost-effective GPU access without local setup hassle.
+1. Wan2.1: Outperforms many closed-source models and runs on consumer hardware.
+2. Spheron: Decentralized, scalable, and cost-effective GPU access without local setup hassle.
 
 
 
