@@ -28,16 +28,13 @@ Before diving in, ensure you have:
 
 #### Via Spheron Console
 1. Log in to [console.spheron.network](http://console.spheron.network).
-2. Create a new instance, select the `jupyter/minimal-notebook` image, and configure:
-   - **Port**: Expose 8888 globally.
-   - **GPU**: 1 RTX 4090 (24 GB VRAM).
-   - **Storage**: At least 15 GB (for model weights).
+2. Create a new instance, select the `jupyter/notebook` image:
 3. Deploy and note the URL (e.g., `https://<your-id>.spheron.app:8888`) and access token.
 
 #### Via Spheron CLI
-1. Install the CLI: `npm install -g @spheron/cli`.
-2. Use the following [sample YAML](https://www.notion.so/sample-yaml-file-1a7b2d6b832a802da53bc1bf8876e750?pvs=21), adjusting GPU and storage as needed:
-3. Run sphnctl deploy -f deploy.yaml and note the URL/token.
+1. Install the CLI: `npm install -g @spheron/cli`.(detailed guide here : [https://docs.spheron.network/user-guide/protocol-cli](https://docs.spheron.network/user-guide/protocol-cli)
+3. Use the following ([jupyter.yml](jupyter.yml)) adjusting GPU and storage as needed:
+4. Run sphnctl deploy deploy.yaml and note the URL/token.
 
 ### Step 2: Import and Configure the Notebook
 1. Open your Jupyter instance (e.g., https://<your-id>.spheron.app:8888) and log in with the token.
@@ -51,6 +48,18 @@ Before diving in, ensure you have:
 1. Execute each notebook cell step-by-step.
 2. In the final cell, enter your text prompt.
 3. Run the cell to generate a 5-second 480P video (expect ~4 minutes processing time).
+
+### Example Output
+Prompt: "Two anthropomorphic cats in boxing gear fighting on a stage."
+Result: A 5-second 480P video showing animated cats sparring, rendered in ~4 minutes on an RTX 4090.
+
+## Why Use This?
+Wan2.1: Outperforms many closed-source models and runs on consumer hardware.
+Spheron: Decentralized, scalable, and cost-effective GPU access without local setup hassle.
+
+
+
+
 
 
 
