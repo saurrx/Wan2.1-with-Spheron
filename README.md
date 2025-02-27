@@ -38,7 +38,7 @@ Before diving in, ensure you have:
 
 ### Step 2: Import and Configure the Notebook
 1. Open your Jupyter instance (e.g., https://<your-id>.spheron.app:8888) and log in with the token.
-2. Go to File > Open from URL and paste this notebook URL: [[https://raw.githubusercontent.com/saurrx/Wan2.1-with-Spheron/refs/heads/main/main.ipynb]([url](https://raw.githubusercontent.com/saurrx/Wan2.1-with-Spheron/refs/heads/main/main.ipynb))].
+2. Go to File > Open from URL and paste this notebook URL: [[[https://raw.githubusercontent.com/saurrx/Wan2.1-with-Spheron/refs/heads/main/main.ipynb](https://raw.githubusercontent.com/saurrx/Wan2.1-with-Spheron/refs/heads/main/main.ipynb)]]
 3. The notebook includes scripts to:
    Clone the Wan2.1 repo.
    Install dependencies.
