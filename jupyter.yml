@@ -1,0 +1,49 @@
+version: "1.0"
+
+services:
+  py-cuda:
+    image: spheronnetwork/jupyter-notebook:pytorch-2.4.1-cuda-enabled
+    pull_policy: IfNotPresent
+    expose:
+      - port: 8888
+        as: 8888
+        to:
+          - global: true
+        
+      - port: 3000
+        as: 3000
+        to:
+          - global: true
+    env:
+      - JUPYTER_TOKEN=test
+profiles:
+  name: py-cuda
+  duration: 5h
+  mode: provider
+  compute:
+    py-cuda:
+      resources:
+        cpu:
+          units: 32
+        memory:
+          size: 128Gi
+        storage:
+          - size: 500Gi
+        gpu:
+          units: 2
+          attributes:
+            vendor:
+              nvidia:
+                - model: rtx6000-ada
+  placement:
+    westcoast:
+      pricing:
+        py-cuda:
+          token: CST
+          amount: 20	
+
+deployment:
+  py-cuda:
+    westcoast:
+      profile: py-cuda
+      count: 1
