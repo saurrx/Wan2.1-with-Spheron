@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dubai Marina"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              55.133781,
+              25.086971
+            ],
+            [
+              55.135901,
+              25.086971
+            ],
+            [
+              55.135901,
+              25.080237
+            ],
+            [
+              55.133781,
+              25.080237
+            ],
+            [
+              55.133781,
+              25.086971
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
