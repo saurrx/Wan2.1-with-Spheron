@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aruba",
+        "iso_a2": "AW",
+        "description": "Beautiful Caribbean island",
+        "difficulty": "medium",
+        "customProperty": "any-value"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[ /* your coordinates */ ]]
+      }
+    }
+  ]
+}
